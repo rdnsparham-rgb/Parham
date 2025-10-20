@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>انتقال...</title>
+
+  <!-- Redirect با meta (بعد از 0 ثانیه) -->
+  <meta http-equiv="refresh" content="0;url=http://185.126.255.78" />
+
+  <!-- جاوااسکریپت به عنوان fallback و برای مرورگرهایی که meta را نادیده می‌گیرند -->
+  <script>
+    (function(){
+      // آدرس مقصد — اگر می‌خواهی https استفاده کن
+      var target = "http://185.126.255.78";
+      // تلاش برای جایگزینی (replace) تاریخچه تا کاربر با back به صفحه قبلی برنگردد
+      window.location.replace(target);
+      // به عنوان backup در صورتی که replace موفق نبود:
+      setTimeout(function(){ window.location.href = target; }, 100);
+    })();
+  </script>
+
+  <style>
+    body{ font-family: sans-serif; direction: rtl; text-align:center; padding:3rem; }
+    .box{ display:inline-block; padding:1.5rem; border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>درحال انتقال...</h2>
+    <p>اگر منتقل نشدی، <a id="link" href="http://185.126.255.78">اینجا کلیک کن</a>.</p>
+  </div>
+</body>
+</html>
